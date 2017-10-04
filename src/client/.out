@@ -1,0 +1,7 @@
+void			init_select(t_client *c)
+{
+  FD_ZERO(&c->readfs);
+  FD_ZERO(&c->writefs);
+  FD_SET(c->server_fd, &c->readfs);
+  FD_SET(0, &c->readfs);
+}

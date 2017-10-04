@@ -1,0 +1,4 @@
+void		server_usage()
+{
+  write(1, "USAGE: ./server port\n", 21);
+}
